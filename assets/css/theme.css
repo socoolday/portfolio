@@ -1,0 +1,130 @@
+button{outline: none;}
+input{outline:none;}
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --border-color:#00b1ff;
+    --hover-color:#00b1ff;
+    --ahover:#fff;
+    --menu-hover:#00b1ff;
+    --ham-color:#00b1ff;
+    --gray-color:#e6e5e5;
+    --bg-color-s:#00b1ff;
+    --con-bg:#fff;
+    --con-border:#ededed;
+    --tm-bg1:#00b1ff;
+    --tm-bg2:#f2f2f2;
+    --tm-bg3:#3587d8;
+    --tm-bg4:#346faa;
+    --tm-bg5:#e6e6e6;
+    --input_b_bg1:#fff;
+    --input_b_bg2:#4798e8;
+    --input_b_bor1:#dedede;
+    --txt-c1:#27273b;
+    --bor-s-1:#ddd;
+    --time-pick1:#22c6ab;
+    --tb-bg-1:#f5f5f5;
+    --tb-bg-2:#d3e1ec;
+    --tb-co-1:#696969;
+    --tb-txt-co1:#7b7b7b;
+    --tb-bor-co1:#ffffff;
+    --pg-bg-1:#fff;
+    --pg-txt-1:#ddd;
+    --pg-bt-bor1:#333;
+    --sm_tit:#00b1ff;
+    --sm_txt:#7b7b7b;
+    --warning_txt:#e53a1b;
+    --gray-shadow:rgba(0,0,0,.4);
+    --gray-shadow-2:rgba(0,0,0,.05);
+    --hr-cl:#ddd;
+    --card-box:#285ef3;
+    --card-box-1:#95b128;
+    --card-box-2:#f0bb5a;
+    --card-box-3:#ec7000;
+    --main-txt:#1b1b59;
+    --co-bg:#f5f5f5;
+    --modal-input:#ffffff;
+    --modal-input-c:#2c2c2c;
+    --tit-txt-bg:#d2d6e3;
+    --tb-r-bg:#f8f8f8;
+    --tb-sum-bg:#c4ced7;
+    --pt-bg:#f1f1f1;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #282a2e;
+    --heading-color: #818cab;
+    --border-color:#282843;
+    --hover-color:#00b1ff;
+    --ahover:#fff;
+    --menu-hover:#00b1ff;
+    --ham-color:#fff;
+    --gray-color:#32394d;
+    --bg-color-s:#3498db;
+    --con-bg:#0f223b;
+    --con-border:#18365b;
+    --tm-bg1:#3b3a5f;
+    --tm-bg2:#0d2038;
+    --tm-bg3:#423faf;
+    --tm-bg4:#346faa;
+    --tm-bg5:#253447;
+    --input_b_bg1:#0d2038;
+    --input_b_bg2:#4798e8;
+    --input_b_bor1:#32394d;
+    --input-txt1-c:#818cab;
+    --txt-c1:#9999bf;
+    --bor-s-1:#3f3f5c;
+    --time-pick1:#22c6ab;
+    --tb-bg-1:#34455c;
+    --tb-bg-2:#112641;
+    --tb-co-1:#bdc6cd;
+    --tb-txt-co1:#9aa3ba;
+    --tb-bor-co1:#2b3a4f;
+    --pg-bg-1:#27273b;
+    --pg-txt-1:#5f6e98;
+    --pg-bt-bor1:#5f6e98;
+    --sm_tit:#fff;
+    --sm_txt:#00b1ff;
+    --warning_txt:orange;
+    --gray-shadow:rgba(0,0,0,.4);
+    --gray-shadow-2:rgba(0,0,0,.05);
+    --hr-cl:#32394d;
+    --main-txt:#fff;
+    --notice_box:#262642;
+    --co-bg:#0e2037;
+    --modal-input:#505c65;
+    --modal-input-c:#dddddd;
+    --tit-txt-bg:#313543;
+    --tb-r-bg:#404f65;
+    --tb-sum-bg:#253b47;
+    --pt-bg:#182f4d;
+}
+
+body {background-color: var(--bg-color);color: var(--font-color);}
+h1 {color: var(--heading-color);}
+p {color: var(--font-color);}
+a {color: var(--font-color);}
+a:hover, a:focus{color:var(--font-color);}
+font{color: var(--font-color); cursor: pointer;}
+font:hover, font:focus{color: var(--font-color);}
+.switch {display: flex;position: fixed; right:20px; bottom:20px; z-index: 10000;}
+.hr-cl{border-color:var(--hr-cl);}
+
+/*slider switch css */
+.theme-switch-wrapper {display: inline-block;align-items: center;
+  em {margin-left: 10px;font-size: 1rem;}
+}
+.theme-switch {display: inline-block; height: 34px; position: relative; width: 34px; margin-bottom: 0; cursor: pointer;}
+.theme-switch input {display:none;}
+.slider {background-color: #7410f1; bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0; transition: .4s;}
+.slider:before {background-color: #161625; background-image: url(../../images/day_check.png) ; background-position: center center; background-size:70%; bottom: 3px; content: ""; height: 28px;width: 28px; left: 3px; position: absolute; transition: .4s;  background-repeat: no-repeat;}
+input:checked + .slider {background-color: #7410f1;}
+input:checked + .slider:before {background-color: #161625; transform: translateX(0); background-image: url(../../images/night_check.png) ; background-size:70%; background-position: center center; background-repeat: no-repeat;}
+.slider.round {border-radius: 34px;}
+.slider.round:before {border-radius: 50%;}

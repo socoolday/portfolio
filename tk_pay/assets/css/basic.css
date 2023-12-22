@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{ 
+    overflow-y:scroll;
+    box-sizing: border-box;
+    font-size:62.5%;
+}
+body {
+	line-height: 1; 
+    width:100%; 
+    height:100%;
+    -webkit-text-size-adjust:none;
+    font-family:"Gmarket Sans", "Noto Sans KR", "Roboto", sans-serif, 微软雅黑;
+    background-color:#f1f1f1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+a{text-decoration: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img{width:100%;}
+button{color:#333;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body.modal-open {
+
+    overflow:visible !important;
+
+}
+
+body.modal-open[style] {
+
+    padding-right: 0px !important;
+
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 700;
+	src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff2') format('woff2'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansBold.woff') format('woff'); 
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 500;
+	src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff2') format('woff2'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansMedium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Gmarket Sans';    font-style: normal;    font-weight: 300;
+	src: local('Gmarket Sans Light'), local('GmarketSans-Light'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff2') format('woff2'),
+	url('http://script.ebay.co.kr/fonts/GmarketSansLight.woff') format('woff');
+}
+/*
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+.modal{background-color: rgba(0,0,0,.7) !important; }
