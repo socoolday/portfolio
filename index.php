@@ -12,6 +12,7 @@
     <div class="logo">
         <a href="./index.php"><img src="./images/pixel_design.png" alt=""></a>
     </div>
+    
     <div class="info_sns">
         <ul>
             <li>
