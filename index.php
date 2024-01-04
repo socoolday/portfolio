@@ -8,7 +8,19 @@
         </label>
     </div>
 </div>
-
+<header>
+	<div class="logo">
+		<a href=""><img src="./images/logo.png" alt=""><p>Pixel<br>Design</p></a>
+	</div>
+	<div class="nav">
+		<ul>
+			<li><button type="button">About Me</button></li>
+			<li><button type="button">Experience</button></li>
+			<li><button type="button">Portfolio</button></li>
+			<li><button type="button">Contact Me</button></li>
+		</ul>
+	</div>
+</header>
 <div class="vi">
     <div class="vi_txt">
         <div class="vi_txt_b">
@@ -18,7 +30,7 @@
     </div>
     <div class="vi_img">
         <div class="my_img">
-            <img src="./images/my_photo_index_2.png" alt="">
+            <img src="./images/img_me.png" alt="">
         </div>
     </div>
 </div>
