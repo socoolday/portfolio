@@ -5,7 +5,7 @@ input{outline:none;}
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
-    --r-font-color: #e1e1ff;
+    --r-font-color: #fff;
     --bg-color: #fff;
     --heading-color: #292922;
     --border-color:#00b1ff;
@@ -61,7 +61,7 @@ input{outline:none;}
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
-	--r-font-color: #424242;
+	--r-font-color: #27292D;
     --bg-color: #282a2e;
     --heading-color: #818cab;
     --border-color:#282843;

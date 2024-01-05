@@ -36,6 +36,8 @@
 <script src="./assets/js/jquery-ui.min.js"></script>
 <script src="./assets/js/skin_1.js"></script><!--스킨::js-->
 <script src="./assets/js/switch.js"></script><!--theme::js-->
+<!--text animation-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <!-- banner_plugin:js -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
