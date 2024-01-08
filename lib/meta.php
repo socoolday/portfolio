@@ -25,6 +25,7 @@
 
 <!-- banner_plugin:css -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="./plugins/fullpage/jquery.fullpage.min.css">
 
 <!-- icon -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
@@ -53,6 +54,9 @@
 <!--scroll magic-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	
+<!--scroll magic-->
+<script src="./plugins/fullpage/jquery.fullpage.min.js"></script>
 
 </head>
 <body>
