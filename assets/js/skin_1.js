@@ -1,5 +1,6 @@
 $(document).ready(function(){
- 	window.onload = function() {
+	//페이지 접속 시
+	window.onload = function() {
 	  // 1. yllow_box 애니메이션
 	  var yllow_box = document.querySelector('.yllow_box');
 	  yllow_box.style.transform = 'translate(0, -50%) rotate(10deg)';
@@ -30,18 +31,16 @@ $(document).ready(function(){
       $('html').removeClass('no-scroll');
     });
 	
-    // Wrap every letter in a span
+    // text animation
 	var textWrapper = document.querySelector('.ml3');
 	textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 	setTimeout(function() {
-		// 텍스트의 투명도를 1로 바꾸기
 		var letters = document.querySelectorAll('.ml3 .letter');
 		for (var i = 0; i < letters.length; i++) {
 			letters[i].style.opacity = '1';
 		}
 
-		// 애니메이션 시작
 		anime.timeline({loop: false})
 		.add({
 			targets: '.ml3 .letter',
@@ -52,8 +51,7 @@ $(document).ready(function(){
 			duration: 950,
 			delay: (el, i) => 70*i
 		});
-	}, 1000); // 2초 뒤에 애니메이션 시작
-	
+	}, 1000); 
 	
     //type js
     setTimeout(function() {
@@ -65,32 +63,42 @@ $(document).ready(function(){
 			backDelay : 1000
 		});
 	}, 3500);
+	
+	
 	$('#fullpage').fullpage({
-//        sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
-        anchors: ['Pixel', 'AbouteMe', 'Experience', 'Portfolio', 'ContactMe', '6thpage', '7thpage', '8thpage'],
+//		sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
+        anchors: ['Pixel', 'AbouteMe', 'Experience', 'Portfolio', 'ContactMe'],
         menu: '#menu',
         navigation: true,
+		scrollingSpeed: 600,
         afterLoad: function(anchorLink, index){
-        
+			//section 1
+            if(index == 1){
+                //moving the image
+                $(".logo").addClass("white");
+            }else{
+				$(".logo").removeClass("white");
+			}
             //section 2
             if(index == 2){
                 //moving the image
-                $('.sec1_b').addClass('overSection');
-                $('.my_img').addClass('vi_sec2');
-                $('.vi_img').addClass('sec2_cs');
             }else{
-				$('.sec1_b').removeClass('overSection');
-				$('.my_img').removeClass('vi_sec2');
-				$('.vi_img').removeClass('sec2_cs');
 			}
 
             //section 3
             if(anchorLink == '3rdPage'){
-                //moving the image
-                $('#section2').find('.intro').delay(500).animate({
-                    left: '0%'
-                }, 1500, 'easeOutExpo');
             }
         }
     });
+	// Fullpage.js 초기화
+//	new fullpage('#fullpage', {
+//		afterLoad: function(origin, destination, direction) {
+//			// 섹션 로드 후, 해당 섹션에 대한 애니메이션 재생
+//			tl.play(destination.index);
+//		},
+//		onLeave: function(origin, destination, direction) {
+//			// 섹션 떠날 때, 해당 섹션에 대한 애니메이션 역재생
+//			tl.reverse(origin.index);
+//		}
+//	});
 });

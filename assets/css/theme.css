@@ -2,6 +2,7 @@ button{outline: none;}
 input{outline:none;}
 :root {
 	--point-color:#FFB100;
+	--point-bg:#FFB100;
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
@@ -58,6 +59,7 @@ input{outline:none;}
 
 [data-theme="dark"] {
 	--point-color:#FFB100;
+	--point-bg:#FFB100;
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
